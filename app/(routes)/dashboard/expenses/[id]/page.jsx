@@ -49,7 +49,6 @@ function ExpensesScreen({ params }) {
       .where(eq(Expenses.budgetId, params.id))
       .orderBy(desc(Expenses.id));
     setExpensesList(result);
-    console.log(result);
   };
 
   // Used to Delete Budget
